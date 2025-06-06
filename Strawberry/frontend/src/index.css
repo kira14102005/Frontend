@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-shadow{
+.text-shadow {
     text-shadow: 2px 2px 2px black;
 }
 
-.img-shadow{
-    filter : drop-shadow(40px 50px 25px rgb(20, 15, 15)) ;
+.img-shadow {
+    filter: drop-shadow(40px 50px 25px rgb(20, 15, 15));
 }
