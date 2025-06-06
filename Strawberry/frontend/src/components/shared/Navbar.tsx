@@ -2,8 +2,8 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 const Navbar = () => {
     return (
-        <div>
-            <div className="text-white container bg-primary">
+        <div className="py-2 absolute top-0 left-0 z-20 w-full">
+            <div className="text-white container">
                 <div className="flex flex-row justify-between items-center">
                     <h1 className="text-4xl font-bold uppercase"> Straw<span className="font-normal">Berries</span></h1>
                     <ul className="flex flex-row space-x-14">
