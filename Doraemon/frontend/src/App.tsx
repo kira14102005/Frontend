@@ -1,9 +1,9 @@
-import Navbar from "./components/shared/Navbar"
+import Main from "./components/shared/Main"
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className="w-full h-full">
+      <Main />
     </div>
   )
 }
