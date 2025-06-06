@@ -41,8 +41,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd strawberry-store
+   git clone https://github.com/kira14102005/Frontend.git
+   cd Strawberry/frontend
    ```
 
 2. **Install dependencies**:
