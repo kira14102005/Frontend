@@ -3,10 +3,10 @@ import Navbar from "./Navbar"
 import StarIcon from '@mui/icons-material/Star';
 const Main = () => {
     return (
-        <div className="relative flex flex-col justify-between items-center w-full h-full">
+        <div className="relative flex flex-col justify-between items-center w-full h-full space-y-8">
             <Navbar />
             <div className=" w-full grid md:grid-cols-3 grid-cols-1 space-y-7 space-x-7 px-7">
-                <h1 className="z-10 col-span-1 text-6xl text-black font-bold flex flex-col justify-self-center  text-left items-center justify-center md:w-[70%]">
+                <h1 className="z-10 col-span-1 text-6xl text-black font-bold flex flex-col justify-self-center  md:text-left text-center items-center justify-center md:w-[70%]">
                     <span className="w-full">Watch Now in</span>
                     <span className="text-8xl md:text-6xl text-primary w-full">
                         3D
@@ -20,7 +20,7 @@ const Main = () => {
 
                 </div>
                 <div className="z-10 col-span-1 flex items-center justify-center">
-                    <img src="/dora.png" className="img-shadow roater max-h-[600px]" alt="doraemon" />
+                    <img src="/dora.png" className="img-shadow roater  max-h-[300px] lg:max-h-[600px]" alt="doraemon" />
                 </div>
                 <div className="hidden md:flex z-10 col-span-1 w-full items-center justify-center">
                     <div className="flex flex-col  items-center w-[45%] justify-center">
@@ -34,8 +34,8 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-                <section className="bottom-0 px-7 absolute z-0 text-[100px] md:[200px] lg:text-[300px] text-[#E2E8F0] opacity-70 w-full text-center uppercase">
-                    doraemon
+                <section className="bottom-10 left-0 absolute z-0 text-[100px] md:[200px] lg:text-[300px] text-[#E2E8F0] opacity-70 w-full flex justify-center uppercase">
+                    <h1>doraemon</h1>
                 </section>
             </div>
         </div>
