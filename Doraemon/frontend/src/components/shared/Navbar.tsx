@@ -2,7 +2,7 @@ import { Dropdown, Logo, SearchIcon } from "./UIIcons"
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="w-full">
             <div className="grid grid-cols-4 lg:grid-cols-11 w-full justify-between items-center">
                 <div className="col-span-2 flex flex-row space-x-2">
                     <Logo />
