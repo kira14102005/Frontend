@@ -1,12 +1,18 @@
+import { useState } from 'react'
 import Navbar from './Navbar'
 
 const Main = () => {
+    const [sidebar, setSidebar] = useState(false)
+    let component;
+    if (sidebar) component = ;
+    else component = <div></div>
     return (
         <main className='bg-primaryDark md:py-6 md:px-12'>
             <section className='relative min-h-[650px] bg-gradient-to-r from-primary to-secondary w-full md:rounded-xl shadow-md flex flex-col justify-center'>
                 <Navbar />
                 <CentralComponent />
                 <h1 className='text-center font-bold  text-white text-[80px] uppercase w-full  absolute bottom-0 sm:text-[100px] md:text-[120px] xl:[150px] z-0 text-shadow'>berries</h1>
+                {component}
             </section>
         </main>
     )
@@ -41,4 +47,6 @@ export function CentralComponent() {
 
     </>
 }
+
+
 export default Main
