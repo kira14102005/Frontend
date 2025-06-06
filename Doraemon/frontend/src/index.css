@@ -7,3 +7,29 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.img-shadow {
+  filter: drop-shadow(-20px 290px 250px #909ea8);
+}
+
+.roater:hover {
+  animation: mymo 2s linear infinite;
+
+}
+
+@keyframes mymo {
+  0% {
+    transform: rotateX(0deg);
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateX(180deg);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+    transform: rotateY(-360deg);
+  }
+
+}
