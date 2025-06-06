@@ -6,7 +6,7 @@ const Navbar = ({ setSidebar }: { setSidebar: React.Dispatch<React.SetStateActio
             <div className="text-white container">
                 <div className="flex flex-row justify-between items-center">
                     <h1 className="text-4xl font-bold uppercase"> Straw<span className="font-normal">Berries</span></h1>
-                    <ul className="flex flex-row space-x-14">
+                    <ul className="flex flex-row md:space-x-14 sm:space-x-4">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -18,7 +18,7 @@ const Navbar = ({ setSidebar }: { setSidebar: React.Dispatch<React.SetStateActio
                         </li>
                     </ul>
                     <div>
-                        <GiHamburgerMenu className="text-3xl cursor-pointer" onClick={() => {
+                        <GiHamburgerMenu className="absolute right-[30px] text-3xl cursor-pointer" onClick={() => {
                             setSidebar((c: boolean) => {
                                 return !c;
                             });
