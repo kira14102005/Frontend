@@ -33,7 +33,7 @@ export function CentralComponent() {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi nihil eius temporibus perspiciatis aut, dicta velit cum nesciunt sapiente.
                 </p>
-                <button className='font-bold p-2 px-6 rounded-3xl border-white border-[4px] hover:cursor-pointer hover:bg-white hover:text-red-500 hover:border-red-200 bg-transparent w-fit'>
+                <button className='font-semibold p-2 px-6 rounded-3xl border-white border-[4px] hover:cursor-pointer hover:bg-white hover:text-red-500 hover:border-red-200 bg-transparent w-fit'>
                     Shop Now
                 </button>
             </div>
@@ -52,17 +52,21 @@ export function CentralComponent() {
 
 export function SideBar() {
     return <>
-        <div className='absolute top-0 right-0 h-full w-[10%] bg-gradient-to-b from-primary to-secondary z-10 md:rounded-xl'>
+        <div className='absolute top-0 right-0 h-full w-[95px] bg-gradient-to-b from-primary to-secondary z-10 md:rounded-xl'>
             <div className='w-full  h-full flex flex-col justify-center items-center space-y-2'>
                 <div className='w-[2px] bg-white h-[20%]'></div>
                 <div className='flex space-y-3 flex-col items-center text-white'>
-                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>  <GitHubIcon /></div>
-                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>                     <InstagramIcon />
+                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>
+                        <GitHubIcon />
                     </div>
-                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>  <LinkedInIcon /></div>
+                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>
+                        <InstagramIcon />
+                    </div>
+                    <div className='bg-transparent border-white border-[1px] aspect-square rounded-full w-[35px] flex items-center justify-center'>
+                        <LinkedInIcon />
+                    </div>
                 </div>
                 <div className='w-[2px] bg-white h-[20%]'></div>
-
             </div>
         </div></>
 }
