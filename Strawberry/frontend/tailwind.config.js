@@ -16,8 +16,10 @@ export default {
         padding: {
           default: "1rem",
           sm: "2rem"
-        }
+        },
+        
       }
+      
     },
   },
   plugins: [],
