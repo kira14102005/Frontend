@@ -1,6 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 
-const Navbar = () => {
+const Navbar = ({ setSidebar }: { setSidebar: React.Dispatch<React.SetStateAction<boolean>> }) => {
     return (
         <div className="py-2 absolute top-0 left-0 z-20 w-full">
             <div className="text-white container">
@@ -18,7 +18,11 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <div>
-                        <GiHamburgerMenu className="text-3xl cursor-pointer" />
+                        <GiHamburgerMenu className="text-3xl cursor-pointer" onClick={() => {
+                            setSidebar((c: boolean) => {
+                                return !c;
+                            });
+                        }} />
                     </div>
                 </div>
             </div>
