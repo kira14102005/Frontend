@@ -1,6 +1,13 @@
+import { useRef, useState } from "react"
 import { Dropdown, Logo, SearchIcon } from "./UIIcons"
 
 const Navbar = () => {
+    const [side, setSide] = useState(false)
+    const languages = useRef(['ENG', 'HIN', 'JPN', 'TML', 'CHN'])
+    const [lang, setLang] = useState(0)
+    let component;
+    if (side) component = <Sidebar setLang={setLang} />;
+    else component = null;
     return (
         <div className="w-full">
             <div className="grid grid-cols-4 lg:grid-cols-11 w-full justify-between items-center">
@@ -24,11 +31,23 @@ const Navbar = () => {
                         <SearchIcon />
                     </div>
                 </div>
-                <div className="col-span-1 items-center justify-center flex flex-row">
-                    <span className="text-secondary uppercase text-[24px]">eng</span>
-                    <span className="hover:cursor-pointer">
-                        <Dropdown />
-                    </span>
+                <div className="relative col-span-1 flex flex-col space-y-2">
+                    <div className=" items-center justify-center flex flex-row">
+                        <span className="text-secondary uppercase hover:cursor-pointer text-[24px]" onClick={() => {
+                            setSide((c: boolean) => {
+                                return !c
+                            })
+                        }}>{languages.current[lang]}</span>
+                        <span className="hover:cursor-pointer" onClick={() => {
+                            setSide((c: boolean) => {
+                                return !c
+                            })
+                        }}>
+                            <Dropdown />
+
+                        </span>
+                    </div>
+                    {component}
                 </div>
             </div>
         </div>
@@ -36,5 +55,26 @@ const Navbar = () => {
 }
 
 
+export function Sidebar({ setLang }: { setLang: React.Dispatch<React.SetStateAction<number>> }) {
+    return <>
+        <ul className="absolute top-8 w-fit self-center  bg-[#E2E8F0] opacity-70 rounded-3xl text-secondary text-[23px]  py-2 text-center hover:cursor-pointer flex flex-col px-4">
+            <li className="border-b-titleBlack border-b-[2px]" onClick={() => {
+                setLang(0)
+            }}>English</li>
+            <li className="border-b-titleBlack border-b-[2px]" onClick={() => {
+                setLang(1)
+            }}>Hindi</li>
+            <li className="border-b-titleBlack border-b-[2px]" onClick={() => {
+                setLang(3)
+            }}>Tamil</li>
+            <li className="border-b-titleBlack border-b-[2px]" onClick={() => {
+                setLang(2)
+            }}>Japanese</li>
+            <li onClick={() => {
+                setLang(4)
+            }}>Chinese</li>
+        </ul>
+    </>
+}
 
 export default Navbar
