@@ -6,7 +6,7 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 const Main = () => {
     return (
-        <div className="relative flex flex-col justify-between items-center w-full h-full space-y-8">
+        <div className="relative flex flex-col justify-between py-6 gap-20 items-stretch w-full h-full">
             <Navbar />
             <div className=" w-full grid md:grid-cols-3 grid-cols-1 space-y-7 space-x-7 px-7">
                 <h1 className="z-10 col-span-1 text-6xl text-black font-bold flex flex-col justify-self-center  md:text-left text-center items-center justify-center md:w-[70%]">
@@ -22,8 +22,9 @@ const Main = () => {
                     <Button name="Play on" onclick={() => { }} />
 
                 </div>
-                <div className="z-10 col-span-1 flex items-center justify-center">
-                    <img src="/dora.png" className="img-shadow roater  max-h-[300px] lg:max-h-[600px]" alt="doraemon" />
+                <div className="z-10 relative col-span-1 flex items-center justify-center">
+                    <img src="/dora.png" className="roater  max-h-[300px] lg:max-h-[600px]" alt="doraemon" />
+                    <div className="w-[200px] h-[70px] rounded-full bg-[#909ea8] absolute -bottom-20 blur-3xl z-0"></div>
                 </div>
                 <div className="hidden md:flex z-10 col-span-1 w-full items-center justify-center">
                     <div className="flex flex-col  items-center w-[45%] justify-center">
@@ -41,24 +42,33 @@ const Main = () => {
                     <h1>doraemon</h1>
                 </section>
             </div>
-                <Bottom/>
+            <Bottom />
         </div>
     )
 }
 export function Bottom() {
     return <>
-        <div className="w-full grid grid-cols-3 place-items-center gap-6">
+
+        <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-offset="0"
+
+            className="z-10 w-full grid grid-cols-3 place-items-center gap-6">
             <div className="col-span-1 flex flex-col items-start text-secondary text-[20px]">
                 <p>Kolkata</p>
                 <p className="font-semibold text-primary">India</p>
                 <p>3 May, 2025</p>
             </div>
             <div className="col-span-1">
-                <ArrowDownwardIcon className=""/>
+                <ArrowDownwardIcon className="" />
             </div>
-            <div className="col-span-1 flex flex-col">
-                <ArrowLeftIcon className="text-primary" />
-                <ArrowRightIcon />
+            <div className="col-span-1 flex flex-col gap-3">
+                <div className="p-2 aspect-square rounded-full flex place-items-center hover:border-primary hover:border-[1px] cursor-pointer">
+                    <ArrowLeftIcon className="text-primary" />
+                </div>
+                <div className="p-2 aspect-square rounded-full bg-primary flex place-items-center hover:cursor-pointer"> <ArrowRightIcon className="text-white" />
+                </div>
             </div>
         </div>
     </>
