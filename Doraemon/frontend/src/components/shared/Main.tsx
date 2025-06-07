@@ -1,6 +1,9 @@
 import Button from "./Button";
 import Navbar from "./Navbar"
 import StarIcon from '@mui/icons-material/Star';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 const Main = () => {
     return (
         <div className="relative flex flex-col justify-between items-center w-full h-full space-y-8">
@@ -38,8 +41,26 @@ const Main = () => {
                     <h1>doraemon</h1>
                 </section>
             </div>
+                <Bottom/>
         </div>
     )
 }
-
+export function Bottom() {
+    return <>
+        <div className="w-full grid grid-cols-3 place-items-center gap-6">
+            <div className="col-span-1 flex flex-col items-start text-secondary text-[20px]">
+                <p>Kolkata</p>
+                <p className="font-semibold text-primary">India</p>
+                <p>3 May, 2025</p>
+            </div>
+            <div className="col-span-1">
+                <ArrowDownwardIcon className=""/>
+            </div>
+            <div className="col-span-1 flex flex-col">
+                <ArrowLeftIcon className="text-primary" />
+                <ArrowRightIcon />
+            </div>
+        </div>
+    </>
+}
 export default Main
