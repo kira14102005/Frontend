@@ -1,10 +1,10 @@
-import Navbar from "./components/shared/Navbar"
-
+import Main from './components/shared/Main.tsx'
 const App = () => {
   return (
     <div>
-      <Navbar/>
-    </div>
+      <Main></Main> 
+        
+       </div>
   )
 }
 
