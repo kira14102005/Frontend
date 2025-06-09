@@ -48,3 +48,24 @@ body {
   color: white;
   transition: color 0.5s ease, 0.5s ease;
 }
+.underline-animate {
+  position: relative;
+  color: white;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.642);
+  border-radius: 100%;
+  transition: width 500ms ease-in;
+}
+
+.underline-animate:hover::after {
+  width: 110%;
+  transition: width 300ms ease-out;
+}
