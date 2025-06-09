@@ -4,9 +4,26 @@
 
 body {
   color: white;
-  background: linear-gradient(-45deg, #F12524, #8B1314, #64191E);
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
+.cover{
+  background: linear-gradient(-45deg, #FD6467, #8B1314, #64191E);
+}
+.text-outline {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.text-cut {
+  color: white;
+  -webkit-text-stroke: 0px white;
+  transition: color 0.5s ease, -webkit-text-stroke 0.5s ease;
+}
+
+.text-cut:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
