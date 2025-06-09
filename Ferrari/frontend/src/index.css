@@ -27,3 +27,14 @@ body {
   -webkit-text-stroke: 1px white;
 }
 
+.but{
+  background-color:transparent;
+  color : white;
+  border: 2px solid white;
+   transition: color 0.5s ease, 0.5s ease;
+
+}
+.but:hover{
+  background-color:white;
+  color : #8B1314;
+}
