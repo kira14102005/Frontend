@@ -15,9 +15,8 @@ const Main = () => {
                 </section>
 
                 <section className='w-full my-3 grid md:grid-cols-3 gap-3 md:gap-8 lg:pl-20'>
-                    <div className='md:hidden lg:block  relative col-span-1 flex items-center'>
-                        <div className='rounded-xl bg-black opacity-10 absolute z-0 w-full h-full'></div>
-                        <div className='p-8 z-10'> <h1 className=' text-xl font-semibold mb-2'>FEATURES</h1>
+                    <div className='md:hidden lg:block  col-span-1 flex place-items-center'>
+                        <div className='p-8 z-10 bg-black/10 rounded-xl'> <h1 className=' text-xl font-semibold mb-2'>FEATURES</h1>
                             <p className='text-[14px] font-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet. Officia, possimus fuga. Nihil animi impedit voluptates, enim error placeat voluptatem dolor. Praesentium officiis suscipit, itaque quisquam natus magnam unde. Quod laudantium laboriosam fugiat quisquam reiciendis velit itaque beatae expedita doloremque nostrum. </p>
                         </div>
                     </div>
