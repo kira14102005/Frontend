@@ -8,15 +8,15 @@ const Navbar = () => {
                     <div className="border-yell border-[2px] py-2 px-0.8 rounded-[9px]">
                         <img className="max-w-[60px]" src="/logo.png" alt="" /></div>
                 </div>
-                <ul className="flex flex-row gap-4 md:gap-7 lg:gap-10 items-center">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>CARS</li>
+                <ul className="flex flex-row gap-6 md:gap-10 lg:gap-20 items-center">
+                    <li className='cursor-pointer underline-animate'>HOME</li>
+                    <li className='cursor-pointer underline-animate'>ABOUT</li>
+                    <li className='cursor-pointer underline-animate'>CARS</li>
                 </ul>
                 <div className='flex gap-4 md:gap-6 lg:gap-8'>
                     <div className='bgTransparent rounded-full bg-none p-3 flex place-items-center cursor-pointer'>
                         <MenuIcon fontSize='small' /></div>
-                    <div className='bgTransparent cursor-pointer rounded-full bg-none aspect-square p-3 flex place-items-center'><SearchIcon fontSize='small'/></div>
+                    <div className='bgTransparent cursor-pointer rounded-full bg-none aspect-square p-3 flex place-items-center'><SearchIcon fontSize='small' /></div>
                 </div>
             </div>
 
