@@ -8,6 +8,8 @@ The goal of this repository is to document my learning journey in front-end deve
 ## Projects
 - **Strawberry Merchandise Store**: A single-page application promoting strawberry-themed products, built with React, Vite, Tailwind CSS, and MUI icons.  
   *Deployed at*: [https://strawberry-iog.pages.dev/](https://strawberry-iog.pages.dev/)
+- **Doraemon Promotional Store**: A single-page application promoting doraemon cartoon, built with React, Vite, Tailwind CSS, and MUI icons.  
+  *Deployed at*: [https://frontend-1ct.pages.dev/](https://frontend-1ct.pages.dev/)
 
 ## Getting Started
 To explore any project, navigate to its directory, install dependencies with `npm install`, and run the development server with `npm run dev`. Each project includes its own detailed README for specific instructions.
